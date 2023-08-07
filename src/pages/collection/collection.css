@@ -1,0 +1,18 @@
+.collection-section2 {
+    margin-top: 3rem;
+  }
+  .sec2-a {
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 2rem;
+  }
+  .sec2-a button{
+    width: 4rem;
+    height: 1.5rem;
+    text-align: center;
+  }
+  .sec2-a button.active {
+    background-color: var(--colorbtn-primary);
+    color: white;
+    border-radius: var(--border-radius-2);
+  }

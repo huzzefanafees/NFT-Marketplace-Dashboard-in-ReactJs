@@ -1,0 +1,90 @@
+.setting-section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .setting-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+  .setting-links button {
+    color: var(--color-black);
+    background-color: transparent;
+    font-size: 1rem;
+  }
+  .setting-links button.active {
+    color: var(--colorbtn-primary);
+  }
+  .setting-section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .setting-content {
+    display: none;
+  }
+  .setting-content.active {
+    display: block;
+  }
+  .setting-section3 h2,
+  .setting-section4 h2 {
+    margin-bottom: 1rem;
+  }
+  .setting-sec3-inner-divs {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-2);
+  }
+  .setting-label-input input {
+    width: 100%;
+    border: var(--border-input);
+    height: 2.5rem;
+    background: var(--background-input);
+    border-radius: var(--border-radius-1);
+    margin-top: 0.5rem;
+    color: var(--color-black);
+  }
+  .setting-label-input label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .setting-profile {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .setting-profile > div:first-child {
+    background-color: var(--colorbtn-primary);
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .save {
+    background-color: var(--colorbtn-primary);
+    width: 6rem;
+    color: white;
+    margin-top: 1rem;
+  }
+  .setting-section4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 0;
+  }
+  .setting-sec4-divs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-2);
+    padding: var(--card-padding);
+  }
+
+  

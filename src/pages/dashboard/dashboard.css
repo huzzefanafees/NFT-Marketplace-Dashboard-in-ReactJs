@@ -1,0 +1,242 @@
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.sec1-left {
+  background-image: url(../../data/Discover.png);
+  color: white;
+  padding: var(--card-padding);
+  background-size: cover;
+  border-radius: var(--border-radius-3);
+  box-shadow: inset 0 0 0 1000px var(--color-background-fill);
+}
+.sec1-left h1 {
+  color: white;
+  margin: 1rem 0;
+}
+.sec1-left p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.button-card {
+  background-color: var(--colorbtn-primary);
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+}
+.sec1-right {
+  display: grid;
+  grid-template-columns: 17rem 1fr;
+  background-color: var(--color-white);
+  padding: var(--padding-1);
+  border-radius: var(--border-radius-3);
+  gap: 1rem;
+}
+.sec1-right-nft img {
+  width: 100%;
+}
+.sec1-detail-top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sec1-right-nft-detail h2 {
+  margin-top: 0.8rem;
+}
+
+.sec1-detail-bottom p {
+  font-size: 1.1rem;
+}
+.sec1-right-nft-detail .buttons {
+  margin-top: 0.3rem;
+}
+/* ================================ Section2 ========================================= */
+.section2 {
+  margin-top: 4rem;
+}
+.sec2-top {
+  display: flex;
+  justify-content: space-between;
+}
+.trending {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.sec2-a {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+.sec2-a button {
+  font-size: 1rem;
+  color: var(--color-black);
+  width: 3rem;
+  height: 1.5rem;
+  background-color: transparent;
+}
+.sec2-a button.active {
+  background-color: var(--colorbtn-primary);
+  color: white;
+  width: 4rem;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: var(--border-radius-2);
+}
+.bids-content {
+  display: none;
+}
+/* CSS for bids, saved and collections cards */
+
+
+
+/* ============================Section 3================================= */
+.section3 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.6fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.sec3-left-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+.sec3-left-content .artwork1,
+.sec3-left-content .artwork2 {
+  display: flex;
+  background-color: var(--colorbtn-primary);
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.sec3-left-content .artwork2 {
+  background-color: var(--colorbtn-danger);
+}
+.artwork1 img,
+.artwork2 img {
+  width: 50%;
+}
+.sec3-left-divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
+  padding: var(--padding-1);
+}
+.sec3-left-inner-divs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sec3-middle-content,
+.sec3-right-content {
+  background-color: var(--color-white);
+  margin-top: 1rem;
+  border-radius: var(--border-radius-3);
+  padding: var(--card-padding);
+}
+#myChart {
+  height: 18rem !important;
+  margin: 0 auto;
+}
+.sec3-middle h2,
+.sec3-right h2 {
+  color: var(--color-black);
+}
+#myChart1 {
+  height: 16rem !important;
+  margin: 0 auto;
+}
+.label-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.pointer1,
+.pointer2 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.pointer1 {
+  background-color: var(--colorbtn-primary);
+}
+.pointer2 {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey);
+}
+/* ====================Section 4================================== */
+.section4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.sec4-left-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec4-left-top h2 {
+  margin-top: 0;
+}
+.sec4-left-inner-divs {
+  border-radius: var(--border-radius-3);
+  background-color: var(--color-white);
+  margin: 1rem 0;
+}
+.sec4-left-divs,
+.sec4-right-divs {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-1);
+  align-items: center;
+}
+.sec4-right h2 {
+  margin-top: 0;
+}
+.sec4-right-divs {
+  border-radius: var(--border-radius-3);
+  background-color: var(--color-white);
+}
+.sec4-right-inner-divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.follow {
+  border: 1px solid var(--colorbtn-primary) !important;
+  width: 6rem !important;
+  border-radius: var(--border-radius-2) !important;
+}
+.sec4-right-pic-text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 768px){
+  #myChart {
+    height: auto !important;
+  }
+  #myChart1 {
+    width: 50% !important;
+    height: auto !important;
+  }
+}

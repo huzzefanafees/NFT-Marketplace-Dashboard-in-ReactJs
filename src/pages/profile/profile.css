@@ -1,0 +1,79 @@
+/* Section 2 CSS */
+.profile-section2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: baseline;
+  }
+  .profile-sec2-left {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-2);
+    padding: var(--padding-1);
+  }
+  .profile-sec2-left h2 {
+    padding-top: 0.5rem;
+  }
+  .profile-sec2-left h3,
+  .profile-sec2-left p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+  .profile-sec2-inner-divs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .profile-sec2-inner-divs1 {
+    padding: 0.4rem 0 0.8rem;
+  }
+  .profile-sec2-inner-divs2 {
+    padding: 0.8rem 0 0.4rem;
+  }
+  .profile-border-bottom {
+    border-bottom: 1px solid rgba(153, 148, 170, 0.5);
+    margin-top: 1.5rem;
+  }
+  .profile-sec2-inner-divs span {
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: white;
+  }
+  .profile-sec2-inner-divs p {
+    font-size: 1rem;
+  }
+  .unfollow {
+    background-color: var(--colorbtn-danger);
+    color: white;
+    border-radius: var(--border-radius-2);
+  }
+  .profile-following {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Profile section 3 and 4 Starts here */
+.profile-section3 > h2 {
+    color: var(--color-black);
+  }
+  .profile-bought .card {
+    position: relative;
+    z-index: -1;
+  }
+  .profile-bought-bottom {
+    display: flex;
+  }
+  .profile-bought-bottom img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+    border: 2.5px solid white;
+    border-radius: 50%;
+  }
+  .profile-section4 > h2 {
+    color: var(--color-black);
+  }

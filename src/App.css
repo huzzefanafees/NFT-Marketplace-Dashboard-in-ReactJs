@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Root variables */
+:root {
+  --color-background: #f2f2f2;
+  --colorbtn-primary: #6f4ff2;
+  --colorbtn-danger: #dc3546;
+  --color-success: #33e742;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-iris: #6c7aa0;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-grey: #65646a;
+  --color-search: #68676e;
+  --color-background-fill: rgba(111, 79, 242, 0.5);
+  --background-input: #ffffff;
+  /* Border radius */
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.4rem;
+  /* Padding */
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  /* Box shadow */
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  /* Border */
+  --border-1: 1px solid #65646a8f;
+  --border-input: 1px solid grey;
+  --border-scroll: 1px solid var(--color-grey);
+  --scroll-background: #727179;
+}
+/* for dark theme */
+.dark-theme-variables {
+  --color-background: #131129;
+  --color-black: #ffffff;
+  --color-white: #1d1932;
+  --border-input: none;
+  --background-input: #131129;
+  --border-scroll: 1px solid #ffffff;
+  --scroll-background: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: var(--color-black);
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:is(h1, h2, h3, h4, h5, h6, p, label) {
+  color: var(--color-black);
 }
-
-.App-link {
-  color: #61dafb;
+.bolder{
+  font-weight: bold;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.justbold {
+  font-weight: bold;
+  font-size: 15px;
+}
+h1 {
+  max-width: 400px;
+  font-size: 1.5rem !important;
+}
+.text-muted {
+  color: var(--color-iris);
+}
+.bg-primary {
+  background-color: var(--colorbtn-primary);
+}
+.bg-danger {
+  background-color: var(--colorbtn-danger);
+}
+.bg-white {
+  background: var(--color-white);
+}
+.bg-success {
+  background: var(--color-success);
+}
+.primary {
+  color: var(--colorbtn-primary);
+}
+.danger {
+  color: var(--colorbtn-danger);
+}
+.success {
+  color: var(--color-success);
+}
+.black {
+  color: var(--color-black);
+}
+.iris {
+  color: var(--color-iris);
+}
+.white {
+  color: var(--color-white);
 }
