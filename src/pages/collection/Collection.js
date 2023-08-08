@@ -37,7 +37,7 @@ export default function Collection() {
                             onClick={() => handleClick(index)}
                             className={activeButton === index ? "collection-btn active" : "collection-btn"}
                             style={{
-                                color: activeButton === index ? "white" : "black",
+                                color: activeButton === index ? "white" : "var(--color-black)",
                             }}
                         >
                             {button.text}
