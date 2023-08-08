@@ -6,7 +6,25 @@ const settingdetail = [
     {
         classname: "info-input setting-label-input",
         forid: "info",
-        text: "Info",
+        text: "ID",
+        type: "text",
+    },
+    {
+        classname: "info-input setting-label-input",
+        forid: "info",
+        text: "Country",
+        type: "text",
+    },
+    {
+        classname: "info-input setting-label-input",
+        forid: "info",
+        text: "Profession",
+        type: "text",
+    },
+    {
+        classname: "info-input setting-label-input",
+        forid: "info",
+        text: "Expert",
         type: "text",
     },
     {
@@ -18,25 +36,7 @@ const settingdetail = [
     {
         classname: "info-input setting-label-input",
         forid: "info",
-        text: "Info",
-        type: "text",
-    },
-    {
-        classname: "info-input setting-label-input",
-        forid: "info",
-        text: "Info",
-        type: "text",
-    },
-    {
-        classname: "info-input setting-label-input",
-        forid: "info",
-        text: "Info",
-        type: "text",
-    },
-    {
-        classname: "info-input setting-label-input",
-        forid: "info",
-        text: "Info",
+        text: "Pin",
         type: "text",
     },
 ]

@@ -11,19 +11,19 @@ const bidsdetail = [
     },
     {
         image: artwork,
-        heading: "24k",
+        heading: "33k",
         text: "Artwork",
         classname: "artwork artwork2",
     },
     {
         image: artwork,
-        heading: "24k",
+        heading: "29k",
         text: "Artwork",
         classname: "artwork artwork3",
     },
     {
         image: artwork,
-        heading: "24k",
+        heading: "55k",
         text: "Artwork",
         classname: "artwork artwork4",
     },

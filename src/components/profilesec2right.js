@@ -10,18 +10,18 @@ const profiledetail = [
     },
     {
         image: image,
-        heading: "Papaya",
-        text: "60 Items",
+        heading: "Cute",
+        text: "20 Items",
+    },
+    {
+        image: image,
+        heading: "Liquid",
+        text: "83 Items",
     },
     {
         image: image,
         heading: "Papaya",
-        text: "60 Items",
-    },
-    {
-        image: image,
-        heading: "Papaya",
-        text: "60 Items",
+        text: "22 Items",
     },
 ]
 

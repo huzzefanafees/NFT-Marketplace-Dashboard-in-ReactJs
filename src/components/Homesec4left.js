@@ -7,25 +7,25 @@ const sec4detail = [
         image: image,
         heading: "Papaya",
         text: "Purchase by you for 0.05 ETH",
-        time: "12 mins ago",
+        time: "15 mins ago",
+    },
+    {
+        image: image,
+        heading: "Liquid",
+        text: "Purchase by you for 0.15 ETH",
+        time: "14 mins ago",
     },
     {
         image: image,
         heading: "Papaya",
-        text: "Purchase by you for 0.05 ETH",
+        text: "Purchase by you for 0.25 ETH",
         time: "12 mins ago",
     },
     {
         image: image,
-        heading: "Papaya",
-        text: "Purchase by you for 0.05 ETH",
-        time: "12 mins ago",
-    },
-    {
-        image: image,
-        heading: "Papaya",
-        text: "Purchase by you for 0.05 ETH",
-        time: "12 mins ago",
+        heading: "Cube",
+        text: "Purchase by you for 0.35 ETH",
+        time: "10 mins ago",
     },
 ]
 

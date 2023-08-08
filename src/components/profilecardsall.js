@@ -12,12 +12,12 @@ const detail = [
     {
         image1: nft,
         image2: avatar,
-        heading: "Liquid Wave",
+        heading: "Cube Wave",
     },
     {
         image1: nft,
         image2: avatar,
-        heading: "Liquid Wave",
+        heading: "Papaya Wave",
     },
     {
         image1: nft,

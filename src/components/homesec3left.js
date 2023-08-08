@@ -9,12 +9,12 @@ const divdetail = [
         heading:"24K",
         text:"Artwork",
         classname: "artwork1",
-        number: "+168.001%",
+        number: "+128.10%",
         class2: "success",
     },
     {
         image: artwork2,
-        heading:"24K",
+        heading:"32K",
         text:"Artwork",
         classname: "artwork2",
         number: "-168.001%",
@@ -22,10 +22,10 @@ const divdetail = [
     },
     {
         image: artwork1,
-        heading:"24K",
+        heading:"80K",
         text:"Artwork",
         classname: "artwork1",
-        number: "+168.001%",
+        number: "+123.111%",
         class2: "success",
     },
 ]

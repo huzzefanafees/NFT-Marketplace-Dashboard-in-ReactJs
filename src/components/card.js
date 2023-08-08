@@ -8,7 +8,7 @@ export default function card(props) {
         <h2 className='bold'>{props.heading}</h2>
         <div className="sec1-detail-middle">
           <p>{props.timeheading}</p>
-          <p>{props.Bidheading}</p>
+          <p>{props.bidheading}</p>
         </div>
         <p className="primary text-right">{props.bid}</p>
         <div className="sec1-detail-bottom">
