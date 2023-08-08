@@ -1,16 +1,14 @@
 import React from 'react'
-import nft from '../data/NFT (1).png';
-import avatar from '../data/sec1-avatar.png';
 
-export default function profilecard() {
+export default function profilecard(props) {
     return (
         <div className="card">
             <div>
-                <img src={nft} alt="NFT" />
+                <img src={props.image1} alt="NFT" />
             </div>
             <div className="profile-bought-bottom">
-                <h2 className='bold'>Liquid Wave</h2>
-                <img src={avatar} alt="Avatar" />
+                <h2 className='bold'>{props.heading}</h2>
+                <img src={props.image2} alt="Avatar" />
             </div>
         </div>
     )

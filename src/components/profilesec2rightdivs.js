@@ -1,15 +1,14 @@
 import React from 'react';
 import Button from './button';
-import image from '../data/sec1-avatar.png';
 
-export default function profilesec2rightdivs() {
+export default function profilesec2rightdivs(props) {
     return (
         <div class="sec4-right-divs">
             <div class="sec4-right-pic-text">
-                <img src={image} alt="sec1-avatar" />
+                <img src={props.image} alt="sec1-avatar" />
                 <div>
-                    <h3 className='justbold'>Papaya</h3>
-                    <p>60 Items</p>
+                    <h3 className='justbold'>{props.heading}</h3>
+                    <p>{props.text}</p>
                 </div>
             </div>
             <Button className='button unfollow' name='Unfollow' />
