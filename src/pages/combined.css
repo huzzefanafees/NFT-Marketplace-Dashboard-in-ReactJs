@@ -2,7 +2,7 @@
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: 10rem 1fr;
+    grid-template-columns: minmax(5rem,auto) 1fr;
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
     font-size: 0.88rem;
@@ -20,7 +20,7 @@
     width: 90%;
     margin: 0 auto;
   }
-  .aside {
+  .aside.active {
     background-color: var(--color-white);
     width: 10rem;
     height: 100vh;
@@ -28,7 +28,45 @@
     top: 0;
     left: 0;
     bottom: 0;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
+  .aside{
+    background-color: var(--color-white);
+    width: 5rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    animation: scale-down-hor-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  
+  @keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0.4);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+
+  
+  @keyframes scale-down-hor-left {
+    0% {
+      transform: translate(0, 0);
+      transform-origin: 0% 0%;
+      width: 10rem;
+    }
+    100% {
+      transform: translate(0, 0);
+      transform-origin: 0% 0%;
+      width: 5rem;
+    }
+  }
+
   .top-container {
     width: 100%;
     background-color: var(--color-background);
@@ -116,6 +154,19 @@
   text-align: right;
   font-size: 1rem;
 }
+
+#myChart {
+  width: auto !important;
+  height: 18rem !important;
+  margin: 0 auto;
+}
+
+#myChart1 {
+  width: auto !important;
+  height: 16rem !important;
+  margin: 0 auto;
+}
+
 .cards-all-button {
   display: flex;
   justify-content: center;
@@ -215,7 +266,9 @@
   }
   .aside {
     width: 5rem;
+    animation: none;
   }
+  
   .aside h3 {
     display: none;
   }

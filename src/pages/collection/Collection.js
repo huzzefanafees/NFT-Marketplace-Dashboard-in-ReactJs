@@ -27,7 +27,7 @@ export default function Collection() {
     ];
     return (
         <div className="content">
-            <Topforpages pagename='Collections' page='Collection' />
+            <Topforpages pagename='Collections' page='Collection' pageref='collection' />
 
             <div className="collection-section2">
                 <div className="sec2-a">

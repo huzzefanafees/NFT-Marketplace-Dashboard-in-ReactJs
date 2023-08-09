@@ -10,7 +10,7 @@ import Profilecardall from '../../components/profilecardsall';
 export default function Profile() {
     return (
         <div className="content">
-            <Topforpages pagename='Profile' page='Profile' />
+            <Topforpages pagename='Profile' page='Profile' pageref='profile' />
 
             <div className="profile-section2">
                 <div className="profile-sec2-left">

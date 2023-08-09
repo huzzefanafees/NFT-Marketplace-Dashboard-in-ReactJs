@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 import { Link, useLocation } from 'react-router-dom';
 import Image from '../../data/Logo-light.svg';
@@ -32,32 +32,55 @@ const sidebarNavLinks = [
 ]
 
 export default function Sidebar() {
+    const [sidebar, setsidebar] = useState(false);
     const location = useLocation();
+    const sidebarOpen = () => {
+        setsidebar(!sidebar);
+    }
+
     return (
-        <aside className='asideContainer'>
-            <div className='sidebarNav'>
-                <ul className='aside-list'>
-                    <li>
-                        <a href="/dashboard" className="logo-big">
-                            <img src={Image} alt="Logo-light" />
-                        </a>
-                    </li>
-                    {sidebarNavLinks.map((sidebarNavLinks, index) => (
-                        <li key={index}>
-                            <Link className={location.pathname === `/${sidebarNavLinks.title}` ? 'sidebarNavLinkActive' : 'sidebarNavLink'} to={`/${sidebarNavLinks.title}`}>
-                                <span class="material-symbols-sharp sidebarIcons"> {sidebarNavLinks.icon} </span>
-                                <h3 className='bold'>{sidebarNavLinks.title.charAt(0).toUpperCase() + sidebarNavLinks.title.slice(1)}</h3>
-                            </Link>
+        <div className={sidebar ? "aside active scale-up-hor-left" : "aside scale-down-hor-left"}>
+            <aside className='asideContainer'>
+                <div className='sidebarNav'>
+                    <ul className={!sidebar ? 'aside-list' : "aside-list active"}>
+                        <li>
+                            <a href="/dashboard" className="logo-big">
+                                <img src={Image} alt="Logo-light" />
+                            </a>
+                            <button
+                                className={`bars ${sidebar ? '' : 'active'}`}
+                                onClick={sidebarOpen}
+                            >
+                                <span className="material-symbols-sharp menubtn">
+                                    {sidebar ? 'close' : 'menu'}
+                                </span>
+                            </button>
+                            <button
+                                className={`close ${sidebar ? 'active' : ''}`}
+                                onClick={sidebarOpen}
+                            >
+                                <span className="material-symbols-sharp closebtn">
+                                    {sidebar ? 'close' : 'menu'}
+                                </span>
+                            </button>
                         </li>
-                    ))}
-                    <li>
-                        <a href="/">
-                            <img src={signout} alt="sign-out" className='sidebarIcons' />
-                            <h3 className='bold'>Sign out</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+                        {sidebarNavLinks.map((sidebarNavLinks, index) => (
+                            <li key={index}>
+                                <Link className={location.pathname === `/${sidebarNavLinks.title}` ? 'sidebarNavLinkActive' : 'sidebarNavLink'} to={`/${sidebarNavLinks.title}`}>
+                                    <span className="material-symbols-sharp sidebarIcons"> {sidebarNavLinks.icon} </span>
+                                    <h3 className='bold'>{sidebarNavLinks.title.charAt(0).toUpperCase() + sidebarNavLinks.title.slice(1)}</h3>
+                                </Link>
+                            </li>
+                        ))}
+                        <li>
+                            <a href="/dashboard">
+                                <img src={signout} alt="sign-out" className='sidebarIcons' />
+                                <h3 className='bold'>Sign out</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     )
 }

@@ -144,18 +144,12 @@
   border-radius: var(--border-radius-3);
   padding: var(--card-padding);
 }
-#myChart {
-  height: 18rem !important;
-  margin: 0 auto;
-}
+
 .sec3-middle h2,
 .sec3-right h2 {
   color: var(--color-black);
 }
-#myChart1 {
-  height: 16rem !important;
-  margin: 0 auto;
-}
+
 .label-container {
   display: flex;
   justify-content: space-around;

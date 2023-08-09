@@ -9,7 +9,7 @@ import Homesec5 from '../../components/Homesec5';
 export default function Bids() {
     return (
         <div className="content">
-            <Topforpages pagename='Bids' page='Bids' />
+            <Topforpages pagename='Bids' page='Bids' pageref='bids' />
 
             <div className="bids-section2">
                 <Bidssec2 />
