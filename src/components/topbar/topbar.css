@@ -23,6 +23,7 @@
   height: 1.8rem;
   width: 90%;
   background: transparent;
+  color: var(--color-black);
 }
 .search > input::placeholder {
   font-size: 1.5rem;
