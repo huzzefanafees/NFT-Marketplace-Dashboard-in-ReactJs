@@ -1,26 +1,18 @@
 import React from 'react';
 import './bids.css';
 import '../combined.css';
-import nft2 from "../../data/NFT (2).png";
-import nft3 from "../../data/NFT (3).png";
-import nft4 from "../../data/NFT (4).png";
-import nft5 from "../../data/NFT (5).png";
-import avatar from "../../data/avatar.png";
-import artwork from "../../data/Artwork-light2.svg";
-import Homesec5divs from '../../components/Homesec5divs';
 import Topforpages from '../../components/topforpages';
-import Bidssec2divs from '../../components/Bidssec2divs';
+import Bidssec2 from '../../components/Bidssec2';
+import Homesec5top from '../../components/Homesec5top';
+import Homesec5 from '../../components/Homesec5';
 
 export default function Bids() {
     return (
         <div className="content">
-            <Topforpages pagename='Bids' page='Bids' />
+            <Topforpages pagename='Bids' page='Bids' pageref='bids' />
 
             <div className="bids-section2">
-                <Bidssec2divs image={artwork} classname='artwork' />
-                <Bidssec2divs image={artwork} classname='artwork artwork2' />
-                <Bidssec2divs image={artwork} classname='artwork artwork3' />
-                <Bidssec2divs image={artwork} classname='artwork artwork4' />
+                <Bidssec2 />
             </div>
 
             <div className="section5 bids-sec3">
@@ -30,29 +22,9 @@ export default function Bids() {
                         <button class="button bid-place">Place a Bid</button>
                     </div>
                     <div className="sec5-top bids-sec3-top">
-                        <div className="sec5-top-div1 sec5-display">
-                            <input type="checkbox" />
-                            <h3 className='bold'>Item List</h3>
-                        </div>
-                        <div>
-                            <h3 className='bold'>Open Price</h3>
-                        </div>
-                        <div>
-                            <h3 className='bold'>Your Offer</h3>
-                        </div>
-                        <div>
-                            <h3 className='bold'>Recent Offer</h3>
-                        </div>
-                        <div className="bid-sec3-top-div2">
-                            <h3 className='bold'>Time left</h3>
-                            <h3 className="action bold">Action</h3>
-                        </div>
+                        <Homesec5top classname="bid-sec3-top-div2" />
                     </div>
-                    <Homesec5divs image1={nft2} heading='Cute Cube Cool' image2={avatar} />
-                    <Homesec5divs image1={nft3} heading='Liquid Wave' image2={avatar} />
-                    <Homesec5divs image1={nft2} heading='Cute Cube Cool' image2={avatar} />
-                    <Homesec5divs image1={nft4} heading='Liquid Wave' image2={avatar} />
-                    <Homesec5divs image1={nft5} heading='Liquid Wave' image2={avatar} />
+                    <Homesec5 />
                 </div>
             </div>
         </div>

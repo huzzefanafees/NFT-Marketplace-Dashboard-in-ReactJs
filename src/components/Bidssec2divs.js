@@ -7,8 +7,8 @@ export default function Bidssec2divs(props) {
                 <img src={props.image} alt="Artwork" />
             </div>
             <div>
-                <h1 className='bold'>24K</h1>
-                <p>Artwork</p>
+                <h1 className='bold'>{props.heading}</h1>
+                <p>{props.text}</p>
             </div>
         </div>
     )

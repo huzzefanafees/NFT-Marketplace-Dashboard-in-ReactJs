@@ -144,18 +144,12 @@
   border-radius: var(--border-radius-3);
   padding: var(--card-padding);
 }
-#myChart {
-  height: 18rem !important;
-  margin: 0 auto;
-}
+
 .sec3-middle h2,
 .sec3-right h2 {
   color: var(--color-black);
 }
-#myChart1 {
-  height: 16rem !important;
-  margin: 0 auto;
-}
+
 .label-container {
   display: flex;
   justify-content: space-around;
@@ -172,7 +166,7 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 0.4rem;
 }
 .pointer1 {
   background-color: var(--colorbtn-primary);
@@ -197,8 +191,9 @@
   margin-top: 0;
 }
 .sec4-left-inner-divs {
-  border-radius: var(--border-radius-3);
-  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin: 1rem 0;
 }
 .sec4-left-divs,
@@ -207,6 +202,8 @@
   justify-content: space-between;
   padding: var(--padding-1);
   align-items: center;
+  border-radius: var(--border-radius-3);
+  background-color: var(--color-white);
 }
 .sec4-right h2 {
   margin-top: 0;

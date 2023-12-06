@@ -9,9 +9,9 @@ export default function topforpages(props) {
             <div className="welcome-bids welcome-all">
                 <p>Welcome {props.pagename} page</p>
                 <div className="home-bids-link home-all-link">
-                    <a href="/" className="primary">Home</a>
+                    <a href="/dashboard" className="primary">Home</a>
                     <p>&gt;</p>
-                    <a href="#bids" className="primary">{props.page}</a>
+                    <a href={`/${props.pageref}`} className="primary">{props.page}</a>
                 </div>
             </div>
         </div>

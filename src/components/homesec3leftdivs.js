@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function homesec3leftdivs(props) {
     return (
@@ -8,11 +8,11 @@ export default function homesec3leftdivs(props) {
                     <img src={props.image} alt="Artwork" />
                 </div>
                 <div>
-                    <h1 className='bold'>24K</h1>
-                    <p>Artwork</p>
+                    <h1 className='bold'>{props.heading}</h1>
+                    <p>{props.text}</p>
                 </div>
             </div>
-            <p className="success">{props.number}</p>
+            <p className={props.class2}>{props.number}</p>
         </div>
 
     )

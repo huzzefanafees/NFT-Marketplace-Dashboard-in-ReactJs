@@ -39,7 +39,7 @@ export default function Setting() {
     ];
     return (
         <div className="content">
-            <Topforpages pagename='Setting' page='Setting' />
+            <Topforpages pagename='Setting' page='Setting' pageref='setting' />
             <div className="setting-section2">
                 <div className="setting-links">
                     {buttons.map((button, index) => (

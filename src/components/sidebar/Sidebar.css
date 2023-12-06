@@ -1,44 +1,91 @@
-.aside-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
+.aside-list.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.aside-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+
+.aside-list .sidebarIcons {
+  display: block;
+}
+.aside-list h3 {
+  display: none;
+}
+.aside-list.active h3 {
+  display: block;
 }
 .logo-big img {
-    width: 2.7rem;
-
+  width: 2.7rem;
 }
-.sidebarNavLinkActive h3, .sidebarNavLinkActive span{
-    color: var(--colorbtn-primary) !important;
+.sidebarNavLinkActive h3,
+.sidebarNavLinkActive span {
+  color: var(--colorbtn-primary) !important;
 }
-.sidebarNavLink h3, .sidebarNavLink span {
-    color: var(--color-grey) !important;
+.sidebarNavLink h3,
+.sidebarNavLink span {
+  color: var(--color-grey) !important;
+}
+.aside-list li:first-child .closebtn {
+  position: absolute;
+  top: 0.5rem;
+  left: 8rem;
+  color: var(--color-grey);
+}
+.aside-list li:first-child .menubtn {
+  position: absolute;
+  top: 0.5rem;
+  color: var(--color-grey);
+  left: 1.7rem;
 }
 .aside-list li:last-child {
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
 }
 .aside-list li:last-child h3 {
-    color: var(--color-grey) !important;
+  color: var(--color-grey) !important;
 }
-.sidebarIcons {
+.aside-list.active .sidebarIcons {
+  display: none;
+}
+.bars,
+.close {
+  display: none;
+}
+.bars.active,
+.close.active {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .aside-list li:first-child button {
     display: none;
+  }
+  .aside-list {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .aside-list {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: flex-end !important;
-        justify-content: space-between !important;
-        margin-top: 1rem !important;
-        gap: 1.5rem !important;
-    }
-    .aside-list li:last-child {
-        align-self: center;
-        justify-self: flex-start;
-    }
-
+  .aside-list {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+    margin-top: 1rem !important;
+    gap: 1.5rem !important;
+  }
+  .aside-list li:last-child {
+    align-self: center;
+    justify-self: flex-start;
+  }
 }

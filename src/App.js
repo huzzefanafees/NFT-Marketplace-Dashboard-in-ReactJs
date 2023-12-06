@@ -28,9 +28,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container">
-        <div className="aside">
-          <Sidebar />
-        </div>
+        <Sidebar />
         <div className="main wrapper">
           <Topbar />
 

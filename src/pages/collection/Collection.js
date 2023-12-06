@@ -27,7 +27,7 @@ export default function Collection() {
     ];
     return (
         <div className="content">
-            <Topforpages pagename='Collections' page='Collection' />
+            <Topforpages pagename='Collections' page='Collection' pageref='collection' />
 
             <div className="collection-section2">
                 <div className="sec2-a">
@@ -37,7 +37,7 @@ export default function Collection() {
                             onClick={() => handleClick(index)}
                             className={activeButton === index ? "collection-btn active" : "collection-btn"}
                             style={{
-                                color: activeButton === index ? "white" : "black",
+                                color: activeButton === index ? "white" : "var(--color-black)",
                             }}
                         >
                             {button.text}
